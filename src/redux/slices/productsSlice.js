@@ -5,13 +5,12 @@ export const fetchProductsAsync = createAsyncThunk(
   "products/fetchProducts",
   async (data, thunkAPI) => {
     try {
-      console.log(typeof new Date().toString());
       const response = await new Promise((resolve, reject) => {
         setTimeout(function () {
           resolve(DUMMY_DATA);
         }, 2000);
       });
-      return response;
+      return response?.map((prod) => ({ ...prod }));
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
@@ -59,7 +58,7 @@ const productsSlice = createSlice({
   },
   extraReducers: {
     [fetchProductsAsync.fulfilled]: (state, action) => {
-      state.stockProducts = [...action.payload];
+      state.stockProducts = action.payload;
     },
     [productStatusHandler.fulfilled]: (state, action) => {
       const { id } = action.payload;
