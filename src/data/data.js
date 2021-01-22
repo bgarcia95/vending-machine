@@ -32,14 +32,14 @@ export const DUMMY_DATA = [
   new Product(
     5,
     "Cookies",
-    "//hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-ms-fields-cookies-024-1544735513.jpg?resize=*",
+    "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-ms-fields-cookies-024-1544735513.jpg?resize=768:*",
     0.5,
     "20000"
   ),
   new Product(
     6,
     "Braided Bread",
-    "//lh3.googleusercontent.com/proxy/G-KBk3XCSIO0Kgb5EL-gt4fHEJmZkZ_WE_7EPtM02pck7LIFGE6U0SI-HV_woO0cjWUYaYJmE4XqK-IW37A80xcyUcLqCEaUWYHOziUI33C-nM69wIqrAPyZ",
+    "https://veenaazmanov.com/wp-content/uploads/2020/04/Homemade-Challah-Bread-Recipe-4-strand-braid34-1.jpg",
     0.25,
     "10000"
   ),
